@@ -32,7 +32,7 @@ namespace EjerciciosFundamentos
             {
                 sum += i;
             }
-            double prom = (double) sum / limit;
+            double prom = (double)sum / limit;
 
             return (sum, prom);
         }
@@ -58,11 +58,12 @@ namespace EjerciciosFundamentos
         {
             int sum = 0;
 
-            do { 
+            do
+            {
                 sum += start;
                 start++;
             } while (start <= limit);
-            
+
             double prom = (double)sum / limit;
 
             return (sum, prom);
@@ -112,7 +113,7 @@ namespace EjerciciosFundamentos
             double sum = 0;
             for (int i = start; i <= limit; i++)
             {
-                sum += Math.Pow(i,2);
+                sum += Math.Pow(i, 2);
             }
             double prom = (double)sum / limit;
 
@@ -126,7 +127,7 @@ namespace EjerciciosFundamentos
 
             for (int i = 1; i <= limit; i++)
             {
-                h1 += (double) 1 / i;
+                h1 += (double)1 / i;
             }
 
 
@@ -138,7 +139,7 @@ namespace EjerciciosFundamentos
 
             for (int i = limit; i >= 1; i--)
             {
-                h2 += (double) 1 / i;
+                h2 += (double)1 / i;
             }
 
             return h2;
@@ -147,14 +148,6 @@ namespace EjerciciosFundamentos
         //Ejercicio 5
         public static double ejercicio5(int rep)
         {
-            /*int[] div = new int[loop];
-            int i = 0, n=1;
-            do
-            {
-                //div[i] = n;
-                i++;
-                n++;
-            } while (i<loop);*/
 
             double pi = 0, aux = 0;
             int n = 1;
@@ -163,11 +156,11 @@ namespace EjerciciosFundamentos
             {
                 if (i % 2 == 0)
                 {
-                    aux += (double) 1/n;
+                    aux += (double)1 / n;
                 }
                 else
                 {
-                    aux -= (double) 1/n;
+                    aux -= (double)1 / n;
                 }
                 n = n + 2;
             }
@@ -175,6 +168,49 @@ namespace EjerciciosFundamentos
             pi = 4 * aux;
 
             return pi;
+        }
+
+        //ejercicio 6
+        public static int[] ejercicio6(int n)
+        {
+            int[] numbers = new int[n + 1];
+
+            numbers[0] = 0;
+            numbers[1] = 1;
+            numbers[2] = 1;
+
+            Enumerable.Range(3, n - 2).ToList().ForEach(i => numbers[i] = numbers[i - 1] + numbers[i - 2] + numbers[i - 3]);
+
+            return numbers;
+        }
+
+        //Ejercicio 7
+        public static void ejercicio7A()
+        {
+            string linea = "";
+            for (int i = 1; i < 10; i++)
+            {
+                for (int j = 1; j < 10; j++)
+                {
+                    linea = linea + (i * j) + " ";
+                }
+                Console.WriteLine(linea + "\n");
+                linea = "";
+            }
+        }
+
+        //Ejercicio 8
+
+
+        public static string leerArray(int[] numbers)
+        {
+            string linea = "";
+
+            foreach (int n in numbers)
+            {
+                linea = linea + n + "\n\t";
+            }
+            return linea;
         }
     }
 }

@@ -8,24 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\p3dr0\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\b15-21m\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Clase\\DesarrolloInterfaces\\EjerciciosFundamentos\\EjerciciosFundamentos\\EjerciciosFundamentos.csproj",
+      "projectUniqueName": "D:\\Clase\\DesarrolloInterfaces\\EjerciciosFundamentosC#\\EjerciciosFundamentos\\EjerciciosFundamentos\\EjerciciosFundamentos.csproj",
       "projectName": "EjerciciosFundamentos",
-      "projectPath": "D:\\Clase\\DesarrolloInterfaces\\EjerciciosFundamentos\\EjerciciosFundamentos\\EjerciciosFundamentos.csproj",
-      "packagesPath": "C:\\Users\\p3dr0\\.nuget\\packages\\",
-      "outputPath": "D:\\Clase\\DesarrolloInterfaces\\EjerciciosFundamentos\\EjerciciosFundamentos\\obj\\",
+      "projectPath": "D:\\Clase\\DesarrolloInterfaces\\EjerciciosFundamentosC#\\EjerciciosFundamentos\\EjerciciosFundamentos\\EjerciciosFundamentos.csproj",
+      "packagesPath": "C:\\Users\\b15-21m\\.nuget\\packages\\",
+      "outputPath": "D:\\Clase\\DesarrolloInterfaces\\EjerciciosFundamentosC#\\EjerciciosFundamentos\\EjerciciosFundamentos\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\p3dr0\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\b15-21m\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

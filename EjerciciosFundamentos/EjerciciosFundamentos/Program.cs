@@ -38,9 +38,18 @@ int limit = 50000;
 double h1 = Utilidades.ejercicio4(limit);
 double h2 = Utilidades.ejercicio4R(limit);
 Console.WriteLine("Ejercicio 4 \n\tEl resultado de la suma es: {0} \n\tEl resultado de la suma a la inversa es: {1}", h1, h2);
-//Hay una diferencia de 1.5*10^-14 entre las 2 operaciones);*/
+//Hay una diferencia de 1.5*10^-14 entre las 2 operaciones);
 
 //Ejercicio 5
 int rep = 1000000;
 Console.WriteLine("Ejercicio 5\n\tEl resultado de pi con {0} términos utilizados es: {1}", rep, Utilidades.ejercicio5(rep));
+
+//Ejercicio 6
+int n = 20;
+Console.WriteLine("Ejercicio 6\n\tLos primeros {0} números tribonacci son: \n\t{1}", n, Utilidades.leerArray(Utilidades.ejercicio6(n)));*/
+
+//Ejercicio 7
+Console.WriteLine("Ejercicio 7\n");
+Utilidades.ejercicio7A();
+
 
