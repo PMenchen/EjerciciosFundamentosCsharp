@@ -211,6 +211,7 @@ namespace EjerciciosFundamentos
 
         }
 
+        //Ejercicio 9
         public static string ejercicio9(string cadena)
         {
             char[] c = cadena.ToCharArray();
@@ -218,6 +219,28 @@ namespace EjerciciosFundamentos
 
             return new string(c);
         }
+
+
+        //Ejercicio 10
+        public static bool ejercicio10(string str)
+        {
+            str = str.Replace(" ","").ToLower();
+            char[] c1  = str.ToCharArray();
+            char[] c2 = str.ToCharArray();
+
+            Array.Reverse(c2);
+
+            if (!(c1.SequenceEqual(c2))) return false;
+            return true;
+        }
+
+
+
+
+
+
+
+
 
         public static string leerArray(int[] numbers)
         {

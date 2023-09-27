@@ -56,9 +56,14 @@ Utilidades.ejercicio7A();
 Console.WriteLine("Ejercicio 8\nIndique el radio de la esfera en metros.");
 double radio = Utilidades.leerDoubleConsola();
 double[] solution = Utilidades.ejercicio8(radio);
-Console.WriteLine("\n\tEl volumen de la esfera es: {0} m3\n\tEl area de la esfera es: {1} m2", solution[0], solution[1]);*/
+Console.WriteLine("\n\tEl volumen de la esfera es: {0} m3\n\tEl area de la esfera es: {1} m2", solution[0], solution[1]);
 
 //Ejercicio 9
 Console.WriteLine("Ejercicio 9\nIndique una cadena de caracteres:");
 string s = Utilidades.leerConsola();
-Console.WriteLine("\tLa cadena {0} al revés es: {1}", s, Utilidades.ejercicio9(s));
+Console.WriteLine("\tLa cadena {0} al revés es: {1}", s, Utilidades.ejercicio9(s));*/
+
+//Ejercicio 10
+Console.WriteLine("Ejercicio 10\nIndique una cadena de caracteres para comprobar si es palíndroma:");
+string s = Utilidades.leerConsola();
+Console.WriteLine("La cadena {0} {1} es palíndroma", s, Utilidades.ejercicio10(s)? "si" : "no");
