@@ -50,10 +50,15 @@ Console.WriteLine("Ejercicio 6\n\tLos primeros {0} números tribonacci son: \n\t
 
 //Ejercicio 7
 Console.WriteLine("Ejercicio 7\n");
-Utilidades.ejercicio7A();*/
+Utilidades.ejercicio7A();
 
 //Ejercicio 8 
 Console.WriteLine("Ejercicio 8\nIndique el radio de la esfera en metros.");
-double radio = Utilidades.escribirDoubleConsola();
+double radio = Utilidades.leerDoubleConsola();
 double[] solution = Utilidades.ejercicio8(radio);
-Console.WriteLine("\n\tEl volumen de la esfera es: {0} m3\n\tEl area de la esfera es: {1} m2", solution[0], solution[1]);
+Console.WriteLine("\n\tEl volumen de la esfera es: {0} m3\n\tEl area de la esfera es: {1} m2", solution[0], solution[1]);*/
+
+//Ejercicio 9
+Console.WriteLine("Ejercicio 9\nIndique una cadena de caracteres:");
+string s = Utilidades.leerConsola();
+Console.WriteLine("\tLa cadena {0} al revés es: {1}", s, Utilidades.ejercicio9(s));

@@ -211,6 +211,14 @@ namespace EjerciciosFundamentos
 
         }
 
+        public static string ejercicio9(string cadena)
+        {
+            char[] c = cadena.ToCharArray();
+            Array.Reverse(c);
+
+            return new string(c);
+        }
+
         public static string leerArray(int[] numbers)
         {
             string linea = "";
@@ -233,7 +241,12 @@ namespace EjerciciosFundamentos
             return 4 * Math.PI * Math.Pow(radio, 2);
         }
 
-        public static double escribirDoubleConsola()
+        public static string leerConsola()
+        {
+            return Console.ReadLine();
+        }
+
+        public static double leerDoubleConsola()
         {
            return double.Parse(Console.ReadLine());
         }
