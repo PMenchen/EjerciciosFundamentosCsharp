@@ -200,7 +200,16 @@ namespace EjerciciosFundamentos
         }
 
         //Ejercicio 8
+        public static double[] ejercicio8(double radio)
+        {
+            double[] solution = new double[2];
 
+            solution[0] = volumenEsfera(radio);
+            solution[1] = areaEsfera(radio);
+
+            return solution;
+
+        }
 
         public static string leerArray(int[] numbers)
         {
@@ -211,6 +220,22 @@ namespace EjerciciosFundamentos
                 linea = linea + n + "\n\t";
             }
             return linea;
+        }
+
+        public static double volumenEsfera(double radio)
+        {
+            double v = (4 * Math.PI * Math.Pow(radio,3) / 3);
+            return v;
+        }
+
+        public static double areaEsfera(double radio)
+        {
+            return 4 * Math.PI * Math.Pow(radio, 2);
+        }
+
+        public static double escribirDoubleConsola()
+        {
+           return double.Parse(Console.ReadLine());
         }
     }
 }

@@ -46,10 +46,14 @@ Console.WriteLine("Ejercicio 5\n\tEl resultado de pi con {0} términos utilizado
 
 //Ejercicio 6
 int n = 20;
-Console.WriteLine("Ejercicio 6\n\tLos primeros {0} números tribonacci son: \n\t{1}", n, Utilidades.leerArray(Utilidades.ejercicio6(n)));*/
+Console.WriteLine("Ejercicio 6\n\tLos primeros {0} números tribonacci son: \n\t{1}", n, Utilidades.leerArray(Utilidades.ejercicio6(n)));
 
 //Ejercicio 7
 Console.WriteLine("Ejercicio 7\n");
-Utilidades.ejercicio7A();
+Utilidades.ejercicio7A();*/
 
-
+//Ejercicio 8 
+Console.WriteLine("Ejercicio 8\nIndique el radio de la esfera en metros.");
+double radio = Utilidades.escribirDoubleConsola();
+double[] solution = Utilidades.ejercicio8(radio);
+Console.WriteLine("\n\tEl volumen de la esfera es: {0} m3\n\tEl area de la esfera es: {1} m2", solution[0], solution[1]);
