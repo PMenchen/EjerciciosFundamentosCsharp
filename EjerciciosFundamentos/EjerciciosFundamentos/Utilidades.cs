@@ -235,11 +235,72 @@ namespace EjerciciosFundamentos
         }
 
 
+        //Ejercicio 11
+        public static int ejercicio11(string bin)
+        {
+
+            bool b = false;
+            do
+            {
+                if (Utilidades.isNumber(bin))
+                {
+                    b = true;
+                }
+                else
+                {
+                    Console.WriteLine("\tLa cadena introducida no es válida\n\tIndique un numero binario a transformar al sistema decimal:");
+                }
+            } while (!b);
+
+            try
+            {
+                return Convert.ToInt32(bin, 2);
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Los parámetros introducidos no son válidos");
+                throw;
+            }
+
+        }
+
+        public static int ejercicio12(string hex)
+        {
+            try
+            {
+                return Convert.ToInt32(hex, 16);
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Los parámetros introducidos no son válidos");
+                throw;
+            }
+        }
+
+        public static bool validarBinario(string str)
+        {
+            bool b = false;
+            foreach (char item in str.ToCharArray())
+            {
+                Console.WriteLine(item);
+                //if ((int.Parse(item.ToString()) != 1) || (int.Parse(item.ToString()) != 0))
+                if (!(Convert.ToInt32(item) == 1) && !(Convert.ToInt32(item) == 0))
+                {
+                    Console.WriteLine("\tEl numero introducido no es binario");
+                    b = false;
+
+                }else b = true;
+            }
+
+            return b;
+        }
 
 
-
-
-
+        public static bool isNumber(string str)
+        {
+            if (int.TryParse(str, out int n)) return true;
+            return false;
+        }
 
 
         public static string leerArray(int[] numbers)

@@ -54,3 +54,17 @@ E:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\Ejer
 E:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\obj\Debug\net7.0\EjerciciosFundamentos.pdb
 E:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\obj\Debug\net7.0\EjerciciosFundamentos.genruntimeconfig.cache
 E:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\obj\Debug\net7.0\ref\EjerciciosFundamentos.dll
+D:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\bin\Debug\net7.0\EjerciciosFundamentos.exe
+D:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\bin\Debug\net7.0\EjerciciosFundamentos.deps.json
+D:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\bin\Debug\net7.0\EjerciciosFundamentos.runtimeconfig.json
+D:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\bin\Debug\net7.0\EjerciciosFundamentos.dll
+D:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\bin\Debug\net7.0\EjerciciosFundamentos.pdb
+D:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\obj\Debug\net7.0\EjerciciosFundamentos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\obj\Debug\net7.0\EjerciciosFundamentos.AssemblyInfoInputs.cache
+D:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\obj\Debug\net7.0\EjerciciosFundamentos.AssemblyInfo.cs
+D:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\obj\Debug\net7.0\EjerciciosFundamentos.csproj.CoreCompileInputs.cache
+D:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\obj\Debug\net7.0\EjerciciosFundamentos.dll
+D:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\obj\Debug\net7.0\refint\EjerciciosFundamentos.dll
+D:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\obj\Debug\net7.0\EjerciciosFundamentos.pdb
+D:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\obj\Debug\net7.0\EjerciciosFundamentos.genruntimeconfig.cache
+D:\Clase\DesarrolloInterfaces\EjerciciosFundamentosC#\EjerciciosFundamentos\EjerciciosFundamentos\obj\Debug\net7.0\ref\EjerciciosFundamentos.dll
