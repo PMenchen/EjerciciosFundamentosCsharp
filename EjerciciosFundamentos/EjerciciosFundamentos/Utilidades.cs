@@ -264,6 +264,7 @@ namespace EjerciciosFundamentos
 
         }
 
+        //Ejercicio 12
         public static int ejercicio12(string hex)
         {
             try
@@ -276,6 +277,41 @@ namespace EjerciciosFundamentos
                 throw;
             }
         }
+
+
+        public static double ejercicio13()
+        {
+            Console.WriteLine("Ejercicio 13\n\tIntroduce el número de estudiantes");
+            int n = int.Parse(Console.ReadLine());
+            int[] notas = new int[n];
+            bool b = false;
+
+            for (int i = 0; i < n; i++)
+            {
+                do
+                {
+                    Console.WriteLine("\tIntroduce la nota del estudiante {0}", i + 1);
+                    if (int.TryParse(Console.ReadLine(), out int nota) && nota >= 0 && nota <= 100)
+                    {
+                        b = true;
+                        notas[i] = nota;
+                    }
+                    else
+                    {
+                        Console.WriteLine("\tLa nota introducida no es válida, debe encontrarse entre 0 y 100");
+                    }
+                } while (!b);
+                b= false;
+            }
+            int total = notas.Sum();
+
+            double d = total / n;
+
+            return d;
+
+        }
+
+
 
         public static bool validarBinario(string str)
         {
@@ -294,6 +330,8 @@ namespace EjerciciosFundamentos
 
             return b;
         }
+
+
 
 
         public static bool isNumber(string str)

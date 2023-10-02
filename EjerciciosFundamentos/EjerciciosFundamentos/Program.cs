@@ -73,11 +73,14 @@ Console.WriteLine("Ejercicio 11\nIndique un numero binario a transformar al sist
 string s = Utilidades.leerConsola(); 
 int n = Utilidades.ejercicio11(s);
 
-Console.WriteLine("\tEl número binario {0} convertido a decimal es: {1}", s, n);*/
+Console.WriteLine("\tEl número binario {0} convertido a decimal es: {1}", s, n);
 
 //Ejercicio 12
 Console.WriteLine("Ejercicio 12\nIndique un numero hexadecimal a transformar al sistema decimal:");
 string s = Utilidades.leerConsola();
 int n = Utilidades.ejercicio12(s);
 
-Console.WriteLine("\tEl número hexadecimal {0} convertido a decimal es: {1}", s, n);
+Console.WriteLine("\tEl número hexadecimal {0} convertido a decimal es: {1}", s, n);*/
+
+//Ejercicio 13
+Console.WriteLine("La media es: {0}", Utilidades.ejercicio13());
