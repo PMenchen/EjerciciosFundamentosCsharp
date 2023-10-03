@@ -311,6 +311,61 @@ namespace EjerciciosFundamentos
 
         }
 
+        //Ejercicio 14
+        public static string ejercicio14()
+        {
+            Console.WriteLine("Ejercicio 13\n\tIndique la cadena a transformar:");
+            string s = Console.ReadLine();
+            string aux = "";
+
+            foreach (char c in s.ToUpper().ToCharArray())
+            {
+                aux += Convert.ToString((int) c, 2);
+            }
+
+            return aux;
+        }
+
+        //Ejercicio 15
+        public static double ejercicio15()
+        {
+            Console.WriteLine("Ejercicio 15\n\tIndique el número de estudiantes");
+            int n = int.Parse(Console.ReadLine());
+            double[] notas = new double[n];
+            bool b = false;
+
+            for (int i = 0; i < n; i++)
+            {
+                do
+                {
+                    Console.WriteLine("\tIntroduce la nota del estudiante {0}", i + 1);
+                    if (double.TryParse(Console.ReadLine(), out double nota) && nota >= 0 && nota <= 100)
+                    {
+                        b = true;
+                        notas[i] = nota;
+                    }
+                    else
+                    {
+                        Console.WriteLine("\tLa nota introducida no es válida, debe encontrarse entre 0 y 100");
+                    }
+                } while (!b);
+                b = false;
+            }
+
+            double average = notas.Average();
+
+            double min = notas.Min();
+            double max = notas.Max();   
+
+            Console.WriteLine("\tLa media es: {0}\n\tEl mínimo es: {1}\n\tEl máximo es: {2}", average, min, max);
+
+            double sum = notas.Sum(x => Math.Pow( x - average, 2));
+
+            double deviation = Math.Sqrt((sum) / notas.Count());
+
+            return deviation;
+        }
+
 
 
         public static bool validarBinario(string str)

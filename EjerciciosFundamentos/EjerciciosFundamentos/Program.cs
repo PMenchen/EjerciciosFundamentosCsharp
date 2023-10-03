@@ -80,7 +80,32 @@ Console.WriteLine("Ejercicio 12\nIndique un numero hexadecimal a transformar al 
 string s = Utilidades.leerConsola();
 int n = Utilidades.ejercicio12(s);
 
-Console.WriteLine("\tEl número hexadecimal {0} convertido a decimal es: {1}", s, n);*/
+Console.WriteLine("\tEl número hexadecimal {0} convertido a decimal es: {1}", s, n);
 
 //Ejercicio 13
 Console.WriteLine("La media es: {0}", Utilidades.ejercicio13());
+
+//Ejercicio 14
+Console.WriteLine($"La cadena binaria equivalente es: {Utilidades.ejercicio14()}");
+
+//Ejercicio15
+Console.WriteLine($"La desviación estándar es: {Utilidades.ejercicio15()}");*/
+
+
+
+
+
+//Ejercicio 17
+PrintPatterns.patternA();
+PrintPatterns.patternB();
+PrintPatterns.patternC();
+PrintPatterns.patternD();
+PrintPatterns.patternE();
+
+
+
+
+
+
+
+
