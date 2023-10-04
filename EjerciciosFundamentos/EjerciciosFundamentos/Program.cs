@@ -89,8 +89,7 @@ Console.WriteLine("La media es: {0}", Utilidades.ejercicio13());
 Console.WriteLine($"La cadena binaria equivalente es: {Utilidades.ejercicio14()}");
 
 //Ejercicio15
-Console.WriteLine($"La desviación estándar es: {Utilidades.ejercicio15()}");*/
-
+Console.WriteLine($"La desviación estándar es: {Utilidades.ejercicio15()}");
 
 
 
@@ -101,8 +100,40 @@ PrintPatterns.patternB();
 PrintPatterns.patternC();
 PrintPatterns.patternD();
 PrintPatterns.patternE();
+PrintPatterns.patternF();
+PrintPatterns.patternG();
+PrintPatterns.patternH();
+PrintPatterns.patternI();
+PrintPatterns.patternJ();
+PrintPatterns.patternK();
+PrintPatterns.patternL();
+PrintPatterns.patternM();
+PrintPatterns.patternN();
+PrintPatterns.patternO();
+PrintPatterns.patternP();
+PrintPatterns.patternQ();
+PrintPatterns.patternR();
+PrintPatterns.patternS();
 
 
+
+//Ejercicio 18
+Utilidades.ejercicio18();
+
+//Ejercicio 19
+Utilidades.ejercicio19();
+
+//Ejercicio 20
+WordGuess.Game();
+
+//Ejercicio 21 A
+Console.WriteLine("El número ingresado {0} perfecto", Utilidades.ejercicio21A() ? "Si es" : "No es");
+
+//Ejercicio 21 B
+Console.WriteLine("El número ingresado {0} deficiente", Utilidades.ejercicio21B() ? "Si es" : "No es");
+
+//Ejercicio 21 C
+Utilidades.ejercicio21C();*/
 
 
 

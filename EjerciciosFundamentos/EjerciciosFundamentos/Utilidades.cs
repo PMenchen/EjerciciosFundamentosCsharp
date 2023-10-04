@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Pathfinder;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -365,6 +367,268 @@ namespace EjerciciosFundamentos
 
             return deviation;
         }
+
+        //Ejercicio 18
+        public static void ejercicio18()
+        {
+            Console.WriteLine("Ejercicio 18\n\tIndique el ángulo al cual aplicar el seno y el coseno");
+            double n = double.Parse(Console.ReadLine());
+
+            Console.WriteLine($"\tEl seno de {n} es: {calcSin(n)}\n\tEl coseno de {n} es: {calcCos(n)}");
+        }
+
+
+
+        //Ejercicio 19
+        public static void ejercicio19()
+        {
+            bool b = false;
+            int aux = 1;
+            int n = RandomNumber.random_Number(0, 99);
+            Console.WriteLine(n);
+
+            Console.WriteLine("Ejercicio 19\nIntenta adivinar el numero generado aleatoriamente entre 0 y 99");
+
+            do
+            {
+                if (int.TryParse(Console.ReadLine(), out int pred) && pred >= 0 && pred < 100)
+                {
+                    if (pred == n)
+                    {
+                        b = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Intenta {0}", (pred < n) ? "más alto" : "más bajo");
+                    }
+                    aux ++;
+                }
+                else
+                {
+                    Console.WriteLine("\tEl valor introducido no es válido, debe ser un número entre 0 y 99");
+                }
+            } while (!b);
+
+            Console.WriteLine($"Lo has conseguido en {aux} intentos");
+        }
+
+
+        //Ejercicio 21 perfecto
+        public static bool ejercicio21A()
+        {
+            bool b = false;
+            Console.WriteLine("Ejercicio 21A\nIndique el número a comprobar si es entero: ");
+            if (int.TryParse(Console.ReadLine(), out int n) && n > 0)
+            {
+                b = isPerfect(n);
+
+            }
+            else Console.WriteLine("El número ingresado no es válido.");
+
+            return b;
+        }
+
+        //Ejercicio 21 deficiente
+        public static bool ejercicio21B()
+        {
+            bool b = false;
+            Console.WriteLine("Ejercicio 21B\nIndique el número a comprobar si es deficiente: ");
+            if (int.TryParse(Console.ReadLine(), out int n) && n > 0)
+            {
+                b = isDeficient(n);
+
+            }
+            else Console.WriteLine("El número ingresado no es válido.");
+
+            return b;
+        }
+
+
+        //Ejercicio 21 lista
+        public static void ejercicio21C()
+        {
+            Console.Write("Ejercicio 21C\nIngresa un límite positivo: ");
+            if (int.TryParse(Console.ReadLine(), out int limit) && limit > 0)
+            {
+                List<int> perfectNumbers = findPerfect(limit);
+                List<int> nonDeficientNonPerfectNumbers = findNeitherDeficientPerfect(limit);
+
+                string p = "", t = "";
+                int aux = 1;
+
+                Console.WriteLine("Estos son los números perfectos");
+                for (int i = 0; i < perfectNumbers.Count(); i++)
+                {
+                    p += perfectNumbers[i] + " ";
+
+                }
+                Console.WriteLine(p);
+
+                Console.WriteLine("Estos son los números que no son decifientes ni perfectos");
+                for (int i = 0; i < nonDeficientNonPerfectNumbers.Count(); i++)
+                {
+                    if (aux == 10)
+                    {
+                        t += "\n";
+                        aux = 0;
+                    }
+                    t += nonDeficientNonPerfectNumbers[i] + " ";
+                    aux++;
+
+                }
+                Console.WriteLine(t);
+            }
+            else Console.WriteLine("El número ingresado no es válido.");
+        }
+
+
+
+
+        public static bool isPerfect(int n)
+        {
+            int sumaDivisores = 1;
+
+            for (int i = 2; i <= Math.Sqrt(n); i++)
+            {
+                if (n % i == 0)
+                {
+                    sumaDivisores += i;
+
+                    if (i != n / i)
+                    {
+                        sumaDivisores += n / i;
+                    }
+                }
+            }
+
+            return sumaDivisores == n;
+        }
+
+        public static bool isDeficient(int n)
+        {
+            int sumaDivisores = 1;
+
+            for (int i = 2; i <= Math.Sqrt(n); i++)
+            {
+                if (n % i == 0)
+                {
+                    sumaDivisores += i;
+
+                    if (i != n / i)
+                    {
+                        sumaDivisores += n / i;
+                    }
+                }
+            }
+
+            return sumaDivisores < n;
+        }
+
+
+        public static List<int> findPerfect(int limit)
+        {
+            List<int> perfect = new List<int>();
+            for (int i = 2; i <= limit; i++)
+            {
+                if (isPerfect(i))
+                {
+                    perfect.Add(i);
+                }
+            }
+            return perfect;
+        }
+
+        public static List<int> findNeitherDeficientPerfect(int limit)
+        {
+            List<int> neitherDeficientPerfect = new List<int>();
+            for (int i = 2; i <= limit; i++)
+            {
+                if (!isPerfect(i) && !isDeficient(i))
+                {
+                    neitherDeficientPerfect.Add(i);
+                }
+            }
+            return neitherDeficientPerfect;
+        }
+
+
+
+
+
+
+        static long calcSin(double x)
+        {
+
+            long seno = 0;
+            for (int i = 0; i < 15; i++)
+            {
+                double aux = Math.Pow(-1, i) * Math.Pow(x, 2 * i + 1) / factorial(2 * i + 1);
+                seno += (long)aux;
+            }
+            return seno;
+            /*
+            long sin = 0;
+            int aux = 1;
+            for (int i = 3; i <= 10; i = i+2)
+            {
+                Console.WriteLine(factorial(i));
+                if (aux % 2 == 0)
+                {
+                    sin += (long) Math.Pow(x, i) / factorial(i);
+                }
+                else
+                {
+                    sin -= (long) Math.Pow(x, i) / factorial(i);
+                }
+                aux++;
+            }
+            return sin;
+            */
+        }
+
+        static long calcCos(double x)
+        {
+            long coseno = 0;
+            for (int n = 0; n < 15; n++)
+            {
+                double aux =Math.Pow(-1, n) * Math.Pow(x, 2 * n) / factorial(2 * n);
+                coseno += (long)aux;
+            }
+            return coseno;
+            /*
+            long sin = 1;
+            int aux = 0;
+            for (int i = 2; i <= 10; i = i + 2)
+            {
+                if (aux % 2 == 0)
+                {
+                    sin += (long)Math.Pow(x, i) / factorial(i);
+                }
+                else
+                {
+                    sin -= (long)Math.Pow(x, i) / factorial(i);
+                }
+                aux++;
+            }
+            return sin;
+            */
+        }
+
+        public static long factorial(int n)
+        {
+            if (n == 0 && n == 1) return 1;
+
+            long r = 1;
+            for (int i = 2; i <= n; i++)
+            {
+                r *= i;
+            }
+
+            return r;
+        }
+
+
+
 
 
 
