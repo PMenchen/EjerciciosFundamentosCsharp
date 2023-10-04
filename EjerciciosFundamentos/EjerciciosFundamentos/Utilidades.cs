@@ -368,6 +368,10 @@ namespace EjerciciosFundamentos
             return deviation;
         }
 
+
+
+
+
         //Ejercicio 18
         public static void ejercicio18()
         {
@@ -638,7 +642,6 @@ namespace EjerciciosFundamentos
             foreach (char item in str.ToCharArray())
             {
                 Console.WriteLine(item);
-                //if ((int.Parse(item.ToString()) != 1) || (int.Parse(item.ToString()) != 0))
                 if (!(Convert.ToInt32(item) == 1) && !(Convert.ToInt32(item) == 0))
                 {
                     Console.WriteLine("\tEl numero introducido no es binario");

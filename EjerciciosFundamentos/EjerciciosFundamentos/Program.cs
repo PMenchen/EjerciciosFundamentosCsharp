@@ -92,8 +92,6 @@ Console.WriteLine($"La cadena binaria equivalente es: {Utilidades.ejercicio14()}
 Console.WriteLine($"La desviación estándar es: {Utilidades.ejercicio15()}");
 
 
-
-
 //Ejercicio 17
 PrintPatterns.patternA();
 PrintPatterns.patternB();
